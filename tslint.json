@@ -8,7 +8,9 @@
     "interface-name": false,
     "no-console": true,
     "no-empty": false,
-    "arrow-parens": false
+    "arrow-parens": false,
+    "object-literal-sort-keys": false,
+    "jsx-no-multiline-js": false
   },
   "rulesDirectory": []
 }
