@@ -10,7 +10,8 @@
     "no-empty": false,
     "arrow-parens": false,
     "object-literal-sort-keys": false,
-    "jsx-no-multiline-js": false
+    "jsx-no-multiline-js": false,
+    "jsx-boolean-value": false
   },
   "rulesDirectory": []
 }
