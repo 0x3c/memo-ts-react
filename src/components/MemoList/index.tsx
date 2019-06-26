@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
-import { WorkItemInterface, WorkItemProps } from "./index.d";
+import { WorkItemInterface, WorkItemProps, InputValueType } from "./index.d";
 import { workItem } from "../../utils/api";
 import "./list.css";
 
@@ -17,8 +17,9 @@ const WorkItem = (props: WorkItemProps) => {
 };
 
 const MemoList = porps => {
+  const inputValue: InputValueType = undefined;
   const [list, setList] = useState([]);
-  const [text, setText] = useState(undefined);
+  const [text, setText] = useState(inputValue);
   const texttHandler = useCallback(e => setText(e.target.value), []);
   const fetchList = async () => {
     const data = await workItem.r();
@@ -44,7 +45,7 @@ const MemoList = porps => {
     }
     const data = await workItem.c({ text });
     if (data.ok) {
-      setText("" as any);
+      setText(undefined);
       fetchList();
     }
   };

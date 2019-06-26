@@ -11,3 +11,5 @@ export interface WorkItemProps {
   index: number;
   changeHandler(wi: WorkItemInterface): (event) => void;
 }
+
+export type InputValueType = string | undefined;
