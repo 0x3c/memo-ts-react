@@ -1,0 +1,31 @@
+.loginWrapper {
+  width: 350px;
+  margin: auto;
+}
+.loginWrapper > div {
+  width: 100%;
+}
+.loginWrapper > div > * {
+  height: 32px;
+  font-size: 14px;
+  padding: 5px;
+  margin-bottom: 12px;
+  width: 100%;
+}
+.loginWrapper > div:last-child {
+  display: flex;
+}
+.loginWrapper > div:last-child > a {
+  font-size: 13px;
+  width: auto;
+  margin-right: 12px;
+}
+.loginWrapper button:focus {
+  outline: none;
+}
+.loginWrapper > div:last-child > button {
+  cursor: pointer;
+  flex: 1;
+  background-color: #143245;
+  color: #fff;
+}

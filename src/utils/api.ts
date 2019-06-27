@@ -40,3 +40,26 @@ export const workItem = {
     return data;
   }
 };
+
+export const auth = {
+  login: async params => {
+    const { data } = await axios("http://localhost:6001/login", {
+      method: "POST",
+      headers,
+      data: {
+        ...params
+      }
+    });
+    return data;
+  },
+  signUp: async params => {
+    const { data } = await axios("http://localhost:6001/register", {
+      method: "POST",
+      headers,
+      data: {
+        ...params
+      }
+    });
+    return data;
+  }
+};
